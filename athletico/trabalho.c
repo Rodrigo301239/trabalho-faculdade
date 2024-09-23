@@ -1,11 +1,6 @@
 #include <stdio.h>
 #include <string.h>
 
-
-void menu (){
-printf("deu certo o codigo");
-}
-
 void criar_conta (){
         int cadlogin[10],cadsenha[10],apelido[10];
 
@@ -16,16 +11,15 @@ void criar_conta (){
         printf("poderia nos informar como o senhor(a) gostaria de ser chamado?");
         scanf("%s",apelido);
         printf ("conta criada com sucesso\n");
-        menu ();
+        //menu ();
     
 }
 
 void loginC (){
     int conta,escolha;
-    char login [10], senha[10];
+    char login [10], senha [10];
 
-    printf ("voce ja tem uma conta no site?\n1 - nao\n2- sim\n");
-    
+    printf ("Ola, seja bem vindo\n\nvoce ja possui uma conta no site?\n1 - nao\n2- sim\n");
 
     do{   
         scanf ("%d",&conta);
@@ -41,7 +35,7 @@ void loginC (){
         printf ("qual sua senha?\n");
         scanf ("%s",senha); 
 
-        printf("\nLogin ou senha invalidos, deseja criar uma conta?\ndigite\n1 - para criar conta\n2- para tentar novamente");
+        printf("\nLogin ou senha invalidos, deseja criar uma conta?\ndigite\n1 - para criar conta\n2- para tentar novamente\n");
         scanf ("%d",&escolha);
     
         switch (escolha)
